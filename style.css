@@ -1,0 +1,458 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color:aliceblue;
+    color:#333;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:25px;
+    background:MIDNIGHTBLUE;
+    COLOR:WHITE;
+}
+
+.logo img{
+    width:130px;
+    height:auto;
+
+    margin-right:25px;
+}
+
+.header-text h1{
+    font-size:34px;
+    margin-bottom:10px;
+    
+}
+
+.header-text h2{
+    font-size:22px;
+    color:#e3d78f;
+    margin-bottom:12px;
+}
+.header-text p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+nav{
+    background:#92fa6cfb;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    display:block;
+    padding:16px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+nav ul li a:hover{
+
+    background:#FFD700;
+
+    color:#062B63;
+
+    border-radius:5px;
+
+}
+.hero{
+    height:550px;
+    background-image: linear-gradient(rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.55)),
+    url("images/campus.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+.btn{
+    display: inline-block;
+    background: #FFD700;
+    color: #062B63;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: #062B63;
+    color: #FFD700;
+    transform:translateY(-3px);
+}
+#about{
+    padding:70px 80px;
+    background:white;
+}
+
+.about-container{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+.about-image{
+    flex:1;
+    min-width:300px;
+}
+.about-image img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-content h2{
+    color:#062B63;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.about-content hr{
+    width: 80px;
+    height: 4px;
+    background:#FFD700;
+    border:none;
+    margin-bottom:25px;
+}
+.about-content p{
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+.about-content h3{
+
+    color:#0B3D91;
+
+    margin:20px 0 10px;
+
+}
+.about-content ol,
+.about-content ul{
+
+    margin-left:25px;
+
+    margin-bottom:20px;
+
+}
+
+.about-content li{
+
+    margin-bottom:10px;
+}
+#vision{
+    padding:70px 80px;
+    background:#bed4f5;
+}
+.section-title{
+    text-align:center;
+    font-size:38px;
+    color:#062B63;
+    margin-bottom:40px;
+}
+.vision-container{
+    display:flex;
+    flex-wrap:wrap;
+    
+    gap:40px;
+}
+.vision-card{
+    flex:1;
+    min-width:250px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.vision-card:hover{
+    transform:translateY(-5px);
+}
+.vision-card h3{
+    color:#062B63;
+    margin-bottom:15px;
+}
+.vision-card p{
+    
+    line-height:1.6;
+}
+.vision-card ul{
+    margin-left:20px;
+}
+.vision-card li{
+    margin-bottom:10px;
+}
+
+#faculty{
+
+    padding:70px 80px;
+
+    background:rgb(215, 167, 167);
+
+}
+
+.faculty-description{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:rgb(227, 216, 3);
+
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+
+}
+
+th{
+
+    background:#062B63;
+
+    color:white;
+
+    padding:18px;
+
+}
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+tr:hover{
+
+    background:#f5f9ff;
+
+}
+
+.faculty-photo{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+}
+#enquiry{
+    padding:70px 80px;
+    background:#c6f868fb
+}
+.form-description{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:18px;
+}
+.enquiry-form{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+.enquiry-form label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.enquiry-form input,
+.enquiry-form textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    font-size:16px;
+
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus{
+
+    border-color:#062B63;
+
+    outline:none;
+
+}
+
+.form-buttons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.form-buttons input{
+
+    flex:1;
+
+    background:#062B63;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.form-buttons input:hover{
+
+    background:#FFD700;
+
+    color:#062B63;
+
+}
+#contact{
+
+    padding:70px 80px;
+
+    background:white;
+
+}
+
+.contact-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+    justify-content:center;
+
+}
+
+.contact-card{
+
+    background:#f8f9fa;
+
+    width:260px;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-card h3{
+
+    color:#062B63;
+
+    margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+    line-height:1.7;
+
+}
+/* ==========================
+            FOOTER
+========================== */
+
+footer{
+
+    background:#062B63;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
